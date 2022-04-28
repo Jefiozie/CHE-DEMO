@@ -10,15 +10,28 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
     "paths": {
-      "@demo-che/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@demo-che/fake-it": ["libs/fake-it/src/index.ts"],
-      "@demo-che/graph-example": ["libs/graph-example/src/index.ts"]
+      "@demo-che/api-interfaces": [
+        "libs/api-interfaces/src/index.ts"
+      ],
+      "@demo-che/fake-it": [
+        "libs/fake-it/src/index.ts"
+      ],
+      "@demo-che/graph-example": [
+        "libs/graph-example/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

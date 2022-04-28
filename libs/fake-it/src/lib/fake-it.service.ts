@@ -24,7 +24,7 @@ export class FakeItService {
         faker.address.city() +
         faker.address.country(),
       bio: faker.lorem.sentences(),
-      image: faker.image.avatar(),
+      image: faker.image.cats(200,200, true),
     };
   }
   getRandomUsers(amount: number) {

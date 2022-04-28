@@ -1,9 +1,17 @@
+<!-- SIMPLE -->
 <div style="text-align: center">
   <h1>Welcome to app!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-    alt="Nx - Smart, Fast and Extensible Build System"
-  />
 </div>
 <div>Message: {{ hello$ | async | json }}</div>
+
+<!-- MORE API -->
+<ul>
+  <!-- <li *ngFor="let item of items$ | async">
+    {{ item.name }}
+  </li> -->
+  <!-- <li *ngFor="let item of items$ | async">
+    <img [src]="item.image" [alt]="item.name" />
+    <h2>{{ item.name }}</h2>
+    <p>{{ item.email }}</p>
+  </li> -->
+</ul>
