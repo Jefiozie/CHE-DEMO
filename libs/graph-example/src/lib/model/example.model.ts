@@ -2,7 +2,7 @@ import { Field, ID, ObjectType } from '@nestjs/graphql';
 
 @ObjectType({ description: 'example ' })
 export class Example {
-  @Field(() => ID)
+  @Field({ nullable: true })
   id: string;
 
   @Field({ nullable: true })
@@ -11,7 +11,7 @@ export class Example {
 
 @ObjectType({ description: 'user' })
 export class User {
-  @Field(() => ID)
+  @Field({ nullable: true })
   id: string;
   @Field({ nullable: true })
   name: string;

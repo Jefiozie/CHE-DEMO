@@ -11,6 +11,7 @@ import { FakeItModule } from '@demo-che/fake-it';
       driver: ApolloDriver,
       playground: true,
       autoSchemaFile: true,
+      installSubscriptionHandlers: true,
     }),
   ],
   providers: [ExampleResolver],

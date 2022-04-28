@@ -1,4 +1,3 @@
-import { User } from '@demo-che/api-interfaces';
 import { faker } from '@faker-js/faker';
 import { Injectable } from '@nestjs/common';
 
@@ -16,6 +15,7 @@ export class FakeItService {
 
   getRandomUser() {
     return {
+      id: faker.datatype.uuid(),
       name: faker.name.findName(),
       email: faker.internet.email(),
       website: faker.internet.url(),
