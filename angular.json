@@ -5,6 +5,7 @@
     "api-interfaces": "libs/api-interfaces",
     "app": "apps/app",
     "app-e2e": "apps/app-e2e",
+    "fake-it": "libs/fake-it",
     "graph-example": "libs/graph-example"
   }
 }

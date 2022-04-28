@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@demo-che/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@demo-che/fake-it": ["libs/fake-it/src/index.ts"],
       "@demo-che/graph-example": ["libs/graph-example/src/index.ts"]
     }
   },
