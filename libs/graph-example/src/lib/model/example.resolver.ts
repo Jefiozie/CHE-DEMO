@@ -30,7 +30,7 @@ export class ExampleResolver {
     const user = this.fakeService.getRandomUser();
     // console.error(user, name);
     pubSub.publish('userAdded', { userAdded: { ...user, name } });
-    return user;
+    return { ...user, name };
   }
 
   @Subscription(() => User)
