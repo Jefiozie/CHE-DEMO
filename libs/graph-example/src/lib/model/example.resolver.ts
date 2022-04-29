@@ -21,14 +21,12 @@ export class ExampleResolver {
   @Query(() => [User])
   async users(): Promise<User[]> {
     const users = this.fakeService.getRandomUsers(10) as User[];
-    // console.error(users);
     return users;
   }
 
   @Mutation(() => User)
   async addUser(@Args('name') name: string): Promise<User> {
     const user = this.fakeService.getRandomUser();
-    // console.error(user, name);
     pubSub.publish('userAdded', { userAdded: { ...user, name } });
     return { ...user, name };
   }
