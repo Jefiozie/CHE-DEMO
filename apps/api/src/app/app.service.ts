@@ -4,6 +4,6 @@ import { Message } from '@demo-che/api-interfaces';
 @Injectable()
 export class AppService {
   getData(): Message {
-    return { message: 'Welcome to api!' };
+    return { message: 'Welcome to the CHE api!' };
   }
 }

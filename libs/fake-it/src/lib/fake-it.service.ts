@@ -24,13 +24,11 @@ export class FakeItService {
         faker.address.city() +
         faker.address.country(),
       bio: faker.lorem.sentences(),
-      image: faker.image.cats(200,200, true),
+      image: faker.image.cats(200, 200, true),
     };
   }
   getRandomUsers(amount: number) {
-    console.error(amount);
     const users: unknown[] = [];
-    console.error(amount);
     for (let i = 0; i < amount; i++) {
       users.push(this.getRandomUser());
     }
