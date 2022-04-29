@@ -39,7 +39,6 @@ export class AppController {
   })
   @Get('users')
   findMany() {
-    console.error('as;ldkj;asldkja');
     const users = this.fakeService.getRandomUsers(10) as User[];
     console.error(users);
     return users;
